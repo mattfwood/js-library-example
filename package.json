@@ -66,5 +66,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "eslint-config-cratebind": "^1.0.7"
+  }
 }
