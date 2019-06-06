@@ -1,0 +1,8 @@
+{
+  "short_name": "js-library-example",
+  "name": "js-library-example",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
