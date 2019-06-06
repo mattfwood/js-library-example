@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Dropdown = ({ options }) => {
+function Dropdown({ options }) {
   const [hidden, setHidden] = useState(true);
 
   const toggleHidden = () => {
@@ -9,7 +9,7 @@ const Dropdown = ({ options }) => {
   };
 
   return (
-    <Fragment>
+    <div>
       <button
         onClick={toggleHidden}
         aria-expanded={!hidden}
@@ -31,15 +31,15 @@ const Dropdown = ({ options }) => {
           Item 2
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 
-Dropdown.propTypes = {
-  options: PropTypes.arrayOf({
-    onSelect: PropTypes.func.isRequired,
-    children: PropTypes.children.isRequired,
-  }).isRequired,
-};
+// Dropdown.propTypes = {
+//   options: PropTypes.arrayOf({
+//     onSelect: PropTypes.func.isRequired,
+//     children: PropTypes.children.isRequired,
+//   }).isRequired,
+// };
 
 export default Dropdown;
