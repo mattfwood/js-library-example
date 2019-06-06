@@ -5,6 +5,7 @@ import styles from './styles.css'
 
 export default class ExampleComponent extends Component {
   static propTypes = {
+    /** Text to display */
     text: PropTypes.string
   }
 
